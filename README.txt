@@ -25,7 +25,7 @@ La aplicación CulturApp ha sido creada en un entorno de Node.js utilizando la b
      
 4.- CAMBIOS EN CARPETAS 
     Para finalizar, se copiarán y pegarán las carpetas "views", "routes" y "public" del repositorio para obtener las funciones de la aplicación. 
-    
+            
 5.- ¡YA PUEDES DISFRUTAR DE CULTURAPP!
  
 
