@@ -1,7 +1,7 @@
 
-// ------------------------------------------------------------------------
-//                      CREACIÓN ENTORNO CULTURAPP 
-//  ------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------
+//                                                        CREACIÓN ENTORNO CULTURAPP 
+//  ----------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -24,7 +24,9 @@ La aplicación CulturApp ha sido creada en un entorno de Node.js utilizando la b
      Arrancar en http://localhost:3000 (puerto 3000)
      
 4.- CAMBIOS EN CARPETAS 
-    Para finalizar, se copiarán y pegarán las carpetas "views", "routes" y "public" del repositorio para obtener las funciones de la aplicación. 
+    Para finalizar, se copiarán y pegarán las siguientes carpetas del repositorio para obtener las funciones de la aplicación. 
+    4.1.- Carpetas "views", "routes" y "public" dentro de la carpeta principal CulturApp anteriormente creada. 
+    4.2.- Archivos "app.js", "package.json" y "package-lock.json" dentro de la carpeta principal CulturApp anteriormente creada.
             
 5.- ¡YA PUEDES DISFRUTAR DE CULTURAPP!
  
