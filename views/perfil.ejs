@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <% include header %>
+<head>
+  <title>Perfil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+.profile {
+        margin: 26px;
+        display: flex;
+        justify-content: center;
+    }
+    .profile__image{
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    
+    .row.content {height: 5x}
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+
+    .child {
+          background: #a5b3ae;
+          padding: 15px 15px;
+        }
+
+        .p{
+        color: #3e3c3cf7;
+        font-family: 'Ebrima';
+        font-weight: 1;
+        font-size: 1%;
+        }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="well a">
+        <p class="p">.</p> 
+      </div>
+    </div>
+  </div>
+
+  <p class="p">.</p> 
+    <div class="container-fluid">
+      <div class="child">
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+
+        <div class="profile">
+            <div class="profile__image js__profile-image" style="background-image:url(https://raw.githubusercontent.com/ddbelen/ImagenesCulturApp/c8770609c179f57d6b181b812befc69797d93ee1/PerfilDefault.jpg)">
+            </div>
+          </div>
+
+    </div>
+    
+    <div class="col-sm-9">
+      <div class="well">
+        <h2> &nbsp; Perfil de <%= user.name %> <%= user.surname %></h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+            <h5><bold> &nbsp; Nombre</bold></h5>
+            <h5> &nbsp; <%= user.name %> </h5> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h5 class="font-weight-bold"> &nbsp; Apellidos</h5>
+            <p> &nbsp; <%= user.surname %></p> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h5 class="font-weight-bold"> &nbsp; Género </h5>
+            <p> &nbsp; <%= user.gender %></p> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h5 class="font-weight-bold"> &nbsp; Correo Electrónico</h5>
+            <p> &nbsp; <%= user.email %></p> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="well">
+            <h5 class="font-weight-bold"> &nbsp; Favoritos</h5>
+            <p><a href="http://localhost:3000/favoritos" target="_blank">  &nbsp;  Tus Favoritos <i class="fas fa-heart"> </i></a></p>
+          </div>
+
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+<% include footer %>
+</html>

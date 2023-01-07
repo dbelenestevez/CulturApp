@@ -1,0 +1,36 @@
+<html>
+<% include header %>
+<head>
+    <title>Favoritos</title>
+      <!-- Kit de fontawesome (iconos) -->
+  <script src="https://kit.fontawesome.com/82defc5500.js" crossorigin="anonymous"></script>
+<style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+  }
+.title{
+    margin-top: 100px;
+    margin-left: 700px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.fav{
+    margin-top: 100px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+  <div class="title">
+    Favoritos
+</div>
+<div class="fav">
+    <h4 style="text-align: center;">Lugares: <%= user.favorite %></h4>
+</div>
+</body>
+<% include footer %>  
+</html>
