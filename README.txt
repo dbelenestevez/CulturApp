@@ -25,7 +25,7 @@ La aplicación CulturApp ha sido creada en un entorno de Node.js utilizando la b
      
 4.- CAMBIOS EN CARPETAS 
     Para finalizar, se copiarán y pegarán las siguientes carpetas del repositorio para obtener las funciones de la aplicación. 
-    4.1.- Carpetas "views", "routes" y "public" dentro de la carpeta principal culturapp anteriormente creada. 
+    4.1.- Carpetas "views", "routes", "public", "bin", "models" y "passport" dentro de la carpeta principal culturapp anteriormente creada. 
     4.2.- Archivos "app.js", "package.json" y "package-lock.json" dentro de la carpeta principal culturapp anteriormente creada.
             
 5.- ¡YA PUEDES DISFRUTAR DE CULTURAPP!
