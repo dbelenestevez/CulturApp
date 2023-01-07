@@ -36,7 +36,7 @@
 } 
 </style>
 	<title>CulturApp</title>
-   <link rel="icon" type="image/x-icon" href="public/assets/images/logo.png">
+   <link rel="icon" type="image/x-icon" href="public/assets/images/logo.jpg">
 </head>
 
 <body>
@@ -2148,7 +2148,9 @@
 //popup teatros
 function popup(feature, layer) {
     if (feature.properties && feature.properties.Nombre) {
-        layer.bindPopup("<strong>Nombre: </strong>"+feature.properties.Nombre+"<br/>"+"<strong>Categoría: </strong>"+feature.properties.Categoria+"<br/>"+"<strong>Dirección: </strong>"+feature.properties.Direccion+"<br/>"+"<strong>Localidad: </strong>"+feature.properties.Localidad+"<br/>"+"<strong>Web: </strong>"+feature.properties.Website+"<br/>"+"<strong>Teléfono: </strong>"+feature.properties.Telefono);
+      LUGAR = feature.properties.Nombre
+      LUGAR = LUGAR.replace(/\s/g, '')
+        layer.bindPopup("<strong>Nombre: </strong>"+feature.properties.Nombre+"<br/>"+"<strong>Categoría: </strong>"+feature.properties.Categoria+"<br/>"+"<strong>Dirección: </strong>"+feature.properties.Direccion+"<br/>"+"<strong>Localidad: </strong>"+feature.properties.Localidad+"<br/>"+"<strong>Web: </strong>"+feature.properties.Website+"<br/>"+"<strong>Teléfono: </strong>"+feature.properties.Telefono+"<br/>"+"<form action='/inicio' method='POST'><input type='hidden' name='LUGAR' value="+LUGAR+"/><button type='submit'>AÑADIR A FAVORITOS</button></form>");
    }
 }
 
@@ -3386,7 +3388,9 @@ var cines = {
 //popup cines
 function cinesPopup(feature, layer) {
     if (feature.properties && feature.properties.ETIQUETA) {
-        layer.bindPopup("<strong>Nombre: </strong>"+feature.properties.ETIQUETA+"<br/>"+"<strong>Dirección: </strong>"+feature.properties.DIRECCION+"<br/>"+"<strong>Localidad: </strong>"+feature.properties.LOCALIDAD+"<br/>"+"<strong>Web: </strong>"+feature.properties.WEB+"<br/>"+"<strong>Teléfono: </strong>"+feature.properties.CONTACTO);
+      LUGAR = feature.properties.ETIQUETA
+      LUGAR = LUGAR.replace(/\s/g, '')
+        layer.bindPopup("<strong>Nombre: </strong>"+feature.properties.ETIQUETA+"<br/>"+"<strong>Dirección: </strong>"+feature.properties.DIRECCION+"<br/>"+"<strong>Localidad: </strong>"+feature.properties.LOCALIDAD+"<br/>"+"<strong>Web: </strong>"+feature.properties.WEB+"<br/>"+"<strong>Teléfono: </strong>"+feature.properties.CONTACTO+"<br/>"+"<form action='/inicio' method='POST'><input type='hidden' name='LUGAR' value="+LUGAR+"/><button type='submit'>AÑADIR A FAVORITOS</button></form>");
     }
 }
 //museos goeJSON
@@ -6819,7 +6823,9 @@ var museos = {
 //popup museos
 function museosPopup(feature, layer) {
     if (feature.properties && feature.properties.Nombre) {
-        layer.bindPopup("<strong>Nombre: </strong>"+feature.properties.Nombre+"<br/>"+"<strong>Dirección: </strong>"+feature.properties.CALLE+"<br/>"+"<strong>Localidad: </strong>"+feature.properties.MUNIC+"<br/>"+"<strong>Web: </strong>"+feature.properties.WEB+"<br/>"+"<strong>Teléfono: </strong>"+feature.properties.Contacto+"<br/>"+"<strong>Horario: </strong>"+feature.properties.Horario);
+      LUGAR = feature.properties.Nombre
+      LUGAR = LUGAR.replace(/\s/g, '')
+        layer.bindPopup("<strong>Nombre: </strong>"+feature.properties.Nombre+"<br/>"+"<strong>Dirección: </strong>"+feature.properties.CALLE+"<br/>"+"<strong>Localidad: </strong>"+feature.properties.MUNIC+"<br/>"+"<strong>Web: </strong>"+feature.properties.WEB+"<br/>"+"<strong>Teléfono: </strong>"+feature.properties.Contacto+"<br/>"+"<strong>Horario: </strong>"+feature.properties.Horario+"<br/>"+"<form action='/inicio' method='POST'><input type='hidden' name='LUGAR' value="+LUGAR+"/><button type='submit'>AÑADIR A FAVORITOS</button></form>");
     }
 }
 
@@ -7174,7 +7180,9 @@ var parques = {
 //popup parques
 function parquesPopup(feature, layer) {
     if (feature.properties && feature.properties.Nombre) {
-        layer.bindPopup("<strong>Nombre: </strong>"+feature.properties.Nombre+"<br/>"+"<strong>Dirección: </strong>"+feature.properties.DIRECCION+"<br/>"+"<strong>Localidad: </strong>"+feature.properties.MUNICIPIO+"<br/>"+"<strong>Web: </strong>"+feature.properties.Web+"<br/>"+"<strong>Teléfono: </strong>"+feature.properties.Contacto);
+      LUGAR = feature.properties.Nombre
+      LUGAR = LUGAR.replace(/\s/g, '')
+        layer.bindPopup("<strong>Nombre: </strong>"+feature.properties.Nombre+"<br/>"+"<strong>Dirección: </strong>"+feature.properties.DIRECCION+"<br/>"+"<strong>Localidad: </strong>"+feature.properties.MUNICIPIO+"<br/>"+"<strong>Web: </strong>"+feature.properties.Web+"<br/>"+"<strong>Teléfono: </strong>"+feature.properties.Contacto+"<br/>"+"<form action='/inicio' method='POST'><input type='hidden' name='LUGAR' value="+LUGAR+"/><button type='submit'>AÑADIR A FAVORITOS</button></form>");
     }
 }
 
@@ -18677,7 +18685,9 @@ var jardines = {
 //popup jardines
 function jardinPopup(feature, layer) {
     if (feature.properties && feature.properties.ETIQUETA) {
-        layer.bindPopup("<strong>Nombre: </strong>"+feature.properties.ETIQUETA+"<br/>"+"<strong>Dirección: </strong>"+feature.properties.DIRECCION+"<br/>"+"<strong>Localidad: </strong>"+feature.properties.MUNICIPIO);
+      LUGAR = feature.properties.ETIQUETA
+      LUGAR = LUGAR.replace(/\s/g, '')
+        layer.bindPopup("<strong>Nombre: </strong>"+feature.properties.ETIQUETA+"<br/>"+"<strong>Dirección: </strong>"+feature.properties.DIRECCION+"<br/>"+"<strong>Localidad: </strong>"+feature.properties.MUNICIPIO+"<br/>"+"<form action='/inicio' method='POST'><input type='hidden' name='LUGAR' value="+LUGAR+"/><button type='submit'>AÑADIR A FAVORITOS</button></form>");
     }
 }
 
@@ -26544,13 +26554,6 @@ var librerias = {
   }
 ]
 };
-
-var LUGAR = "librerias"
-
-function pasarValor(value) {
-   LUGAR = LUGAR.replace(/([A-Z])/g, ' $1').trim()
-   return LUGAR
-}
 
 //popup librerias
 function libreriasPopup(feature, layer){
